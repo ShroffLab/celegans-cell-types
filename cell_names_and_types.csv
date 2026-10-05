@@ -1321,8 +1321,8 @@ MSppa,MSppa,Non-terminal
 MSppaa,MSppaa,Non-terminal
 MSppaaa,MSppaaa,Non-terminal
 MSppaaaa,MSppaaaa,Non-terminal
-MSppaaaad,GLRR,Miscellaneous?;Pharyngeal
-MSppaaaav,GLRVR,Miscellaneous?;Pharyngeal
+MSppaaaad,GLRR,Pharyngeal
+MSppaaaav,GLRVR,Pharyngeal
 MSppaaap,MSPPAAAP_DR02_DBW_Muscle,Body Wall Muscle
 MSppaap,MSppaap,Non-terminal
 MSppaapa,Dead,Death
