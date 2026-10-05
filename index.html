@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>C. elegans Cell Types</title>
+<style>
+  :root {
+    --bg: #0f1419;
+    --panel: #171d26;
+    --border: #2a3340;
+    --text: #e6e9ef;
+    --muted: #8b96a5;
+    --accent: #5aa9e6;
+    --accent-bg: rgba(90, 169, 230, 0.15);
+    --row-alt: #141a22;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+  }
+  header {
+    padding: 1.25rem 1.5rem 0.75rem;
+    border-bottom: 1px solid var(--border);
+  }
+  h1 {
+    margin: 0 0 0.25rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+  .subtitle {
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin-bottom: 0.75rem;
+  }
+  .controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 1rem 1.5rem;
+    background: var(--panel);
+    border-bottom: 1px solid var(--border);
+    align-items: flex-start;
+  }
+  .control-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+  .control-group label.title {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: var(--muted);
+  }
+  #lineage-filter {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    color: var(--text);
+    padding: 0.5rem 0.7rem;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    width: 220px;
+  }
+  #lineage-filter:focus {
+    outline: none;
+    border-color: var(--accent);
+  }
+  .type-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    max-width: 640px;
+  }
+  .chip {
+    cursor: pointer;
+    user-select: none;
+    padding: 0.3rem 0.7rem;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    font-size: 0.82rem;
+    color: var(--muted);
+    background: var(--bg);
+    white-space: nowrap;
+  }
+  .chip:hover {
+    border-color: var(--accent);
+    color: var(--text);
+  }
+  .chip.active {
+    background: var(--accent-bg);
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+  .reset-btn {
+    align-self: flex-start;
+    margin-top: 1.4rem;
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--muted);
+    padding: 0.5rem 0.9rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.85rem;
+  }
+  .reset-btn:hover {
+    color: var(--text);
+    border-color: var(--accent);
+  }
+  main {
+    padding: 1rem 1.5rem 2rem;
+  }
+  .count {
+    color: var(--muted);
+    font-size: 0.85rem;
+    margin-bottom: 0.6rem;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.92rem;
+  }
+  thead th {
+    position: sticky;
+    top: 0;
+    background: var(--panel);
+    text-align: left;
+    padding: 0.6rem 0.8rem;
+    border-bottom: 1px solid var(--border);
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  thead th:hover {
+    color: var(--accent);
+  }
+  thead th .arrow {
+    color: var(--accent);
+    margin-left: 0.3rem;
+  }
+  tbody td {
+    padding: 0.45rem 0.8rem;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+  }
+  tbody tr:nth-child(even) {
+    background: var(--row-alt);
+  }
+  tbody tr:hover {
+    background: var(--accent-bg);
+  }
+  .lineage-cell {
+    font-family: "SF Mono", Menlo, Consolas, monospace;
+    color: var(--muted);
+  }
+  .type-tag {
+    display: inline-block;
+    padding: 0.1rem 0.5rem;
+    border-radius: 4px;
+    background: var(--accent-bg);
+    color: var(--accent);
+    font-size: 0.8rem;
+    margin: 0.1rem 0.2rem 0.1rem 0;
+  }
+  .empty {
+    color: var(--muted);
+    padding: 2rem;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>C. elegans Cell Lineage &amp; Types</h1>
+  <div class="subtitle">Browse and filter cells by lineage name and tissue/cell type</div>
+</header>
+
+<div class="controls">
+  <div class="control-group">
+    <label class="title" for="lineage-filter">Lineage starts with</label>
+    <input id="lineage-filter" type="text" placeholder="e.g. ABal, MS, P1" autocomplete="off">
+  </div>
+  <div class="control-group">
+    <label class="title">Cell type</label>
+    <div class="type-chips" id="type-chips"></div>
+  </div>
+  <button class="reset-btn" id="reset-btn">Reset filters</button>
+</div>
+
+<main>
+  <div class="count" id="count"></div>
+  <table>
+    <thead>
+      <tr>
+        <th data-key="lineage">Lineage <span class="arrow" id="arrow-lineage"></span></th>
+        <th data-key="name">Name <span class="arrow" id="arrow-name"></span></th>
+        <th data-key="tissue_types">Cell Type(s) <span class="arrow" id="arrow-tissue_types"></span></th>
+      </tr>
+    </thead>
+    <tbody id="table-body"></tbody>
+  </table>
+  <div class="empty" id="empty-msg" style="display:none;">No cells match the current filters.</div>
+</main>
+
+<script>
+let allRows = [];
+let sortKey = "lineage";
+let sortDir = 1;
+const activeTypes = new Set();
+
+function parseCSV(text) {
+  const lines = text.replace(/\r\n/g, "\n").split("\n").filter(l => l.length > 0);
+  const header = lines[0].split(",");
+  return lines.slice(1).map(line => {
+    const parts = line.split(",");
+    const row = {};
+    header.forEach((h, i) => row[h.trim()] = (parts[i] || "").trim());
+    row._types = row.tissue_types.split(";").map(t => t.trim()).filter(Boolean);
+    return row;
+  });
+}
+
+function uniqueTypes(rows) {
+  const s = new Set();
+  rows.forEach(r => r._types.forEach(t => s.add(t)));
+  return Array.from(s).sort();
+}
+
+function renderChips() {
+  const container = document.getElementById("type-chips");
+  const types = uniqueTypes(allRows);
+  container.innerHTML = "";
+  types.forEach(t => {
+    const chip = document.createElement("div");
+    chip.className = "chip";
+    chip.textContent = t;
+    chip.dataset.type = t;
+    chip.addEventListener("click", () => {
+      if (activeTypes.has(t)) activeTypes.delete(t);
+      else activeTypes.add(t);
+      chip.classList.toggle("active");
+      render();
+    });
+    container.appendChild(chip);
+  });
+}
+
+function currentRows() {
+  const prefix = document.getElementById("lineage-filter").value.trim().toUpperCase();
+  let rows = allRows;
+  if (prefix) {
+    rows = rows.filter(r => r.lineage.toUpperCase().startsWith(prefix));
+  }
+  if (activeTypes.size > 0) {
+    rows = rows.filter(r => r._types.some(t => activeTypes.has(t)));
+  }
+  rows = rows.slice().sort((a, b) => {
+    const av = a[sortKey].toLowerCase();
+    const bv = b[sortKey].toLowerCase();
+    if (av < bv) return -1 * sortDir;
+    if (av > bv) return 1 * sortDir;
+    return 0;
+  });
+  return rows;
+}
+
+function render() {
+  const rows = currentRows();
+  const tbody = document.getElementById("table-body");
+  const emptyMsg = document.getElementById("empty-msg");
+  const countEl = document.getElementById("count");
+
+  countEl.textContent = `${rows.length} of ${allRows.length} cells`;
+
+  if (rows.length === 0) {
+    tbody.innerHTML = "";
+    emptyMsg.style.display = "block";
+    return;
+  }
+  emptyMsg.style.display = "none";
+
+  tbody.innerHTML = rows.map(r => `
+    <tr>
+      <td class="lineage-cell">${r.lineage}</td>
+      <td>${r.name}</td>
+      <td>${r._types.map(t => `<span class="type-tag">${t}</span>`).join("")}</td>
+    </tr>
+  `).join("");
+
+  ["lineage", "name", "tissue_types"].forEach(k => {
+    document.getElementById(`arrow-${k}`).textContent = (k === sortKey) ? (sortDir === 1 ? "▲" : "▼") : "";
+  });
+}
+
+function init() {
+  fetch("cell_names_and_types.csv")
+    .then(res => res.text())
+    .then(text => {
+      allRows = parseCSV(text);
+      renderChips();
+      render();
+    });
+
+  document.getElementById("lineage-filter").addEventListener("input", render);
+  document.getElementById("reset-btn").addEventListener("click", () => {
+    document.getElementById("lineage-filter").value = "";
+    activeTypes.clear();
+    document.querySelectorAll(".chip").forEach(c => c.classList.remove("active"));
+    render();
+  });
+  document.querySelectorAll("thead th[data-key]").forEach(th => {
+    th.addEventListener("click", () => {
+      const key = th.dataset.key;
+      if (sortKey === key) {
+        sortDir *= -1;
+      } else {
+        sortKey = key;
+        sortDir = 1;
+      }
+      render();
+    });
+  });
+}
+
+init();
+</script>
+</body>
+</html>
