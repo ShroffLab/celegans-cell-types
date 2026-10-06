@@ -1,0 +1,8 @@
+excretory canal cell
+excretory gland cell
+exc gl L
+exc gl R
+exc duct
+exc pore cell
+G1
+G2
