@@ -1220,11 +1220,11 @@ MSaappaa,vpi2V,Pharyngeal
 MSaappap,vpi3V,Pharyngeal
 MSaappp,MSaappp,Non-terminal
 MSaapppa,MSaapppa,Non-terminal
-MSaapppaa,VL07,Body Wall Muscle
-MSaapppap,VL09,Body Wall Muscle
+MSaapppaa,BWM-VL07,Body Wall Muscle
+MSaapppap,BWM-VL09,Body Wall Muscle
 MSaapppp,MSaapppp,Non-terminal
-MSaappppa,VL11,Body Wall Muscle
-MSaappppp,VL13,Body Wall Muscle
+MSaappppa,BWM-VL11,Body Wall Muscle
+MSaappppp,BWM-VL13,Body Wall Muscle
 MSap,MSap,Non-terminal
 MSapa,MSapa,Non-terminal
 MSapaa,MSapaa,Non-terminal
@@ -1232,7 +1232,7 @@ MSapaaa,MSapaaa,Non-terminal
 MSapaaaa,MSapaaaa,Non-terminal
 MSapaaaad,GLRL,Pharyngeal
 MSapaaaav,GLRVL,Pharyngeal
-MSapaaap,DL02,Body Wall Muscle
+MSapaaap,BWM-DL02,Body Wall Muscle
 MSapaap,MSapaap,Non-terminal
 MSapaapa,Dead,Death
 MSapaapp,M,
@@ -1241,10 +1241,10 @@ MSapapa,MSapapa,Non-terminal
 MSapapaa,MSapapaa,Non-terminal
 MSapapaaa,ccAL,Coelomocyte
 MSapapaap,ccPL,Coelomocyte
-MSapapap,VL02,Body Wall Muscle
+MSapapap,BWM-VL02,Body Wall Muscle
 MSapapp,MSapapp,Non-terminal
-MSapappa,DL01,Body Wall Muscle
-MSapappp,DL04,Body Wall Muscle
+MSapappa,BWM-DL01,Body Wall Muscle
+MSapappp,BWM-DL04,Body Wall Muscle
 MSapp,MSapp,Non-terminal
 MSappa,MSappa,Non-terminal
 MSappaa,MSappaa,Non-terminal
@@ -1252,14 +1252,14 @@ MSappaaa,hmc,
 MSappaap,Z4,
 MSappap,MSappap,Non-terminal
 MSappapa,Dead,Death
-MSappapp,VL01,Body Wall Muscle
+MSappapp,BWM-VL01,Body Wall Muscle
 MSappp,MSappp,Non-terminal
 MSapppa,MSapppa,Non-terminal
-MSapppaa,VL04,Body Wall Muscle
-MSapppap,DL06,Body Wall Muscle
+MSapppaa,BWM-VL04,Body Wall Muscle
+MSapppap,BWM-DL06,Body Wall Muscle
 MSapppp,MSapppp,Non-terminal
-MSappppa,DL03,Body Wall Muscle
-MSappppp,DL05,Body Wall Muscle
+MSappppa,BWM-DL03,Body Wall Muscle
+MSappppp,BWM-DL05,Body Wall Muscle
 MSp,MSp,Non-terminal
 MSpa,MSpa,Non-terminal
 MSpaa,MSpaa,Non-terminal
@@ -1307,15 +1307,15 @@ MSpapappa,pm6VR,Pharyngeal
 MSpapappp,vpi2DR,Pharyngeal
 MSpapp,MSpapp,Non-terminal
 MSpappa,MSpappa,Non-terminal
-MSpappaa,VL15,
-MSpappap,VR15,
+MSpappaa,BWM-VL15,
+MSpappap,BWM-VR15,
 MSpappp,MSpappp,Non-terminal
 MSpapppa,MSpapppa,Non-terminal
-MSpapppaa,VR07,Body Wall Muscle
-MSpapppap,VR09,Body Wall Muscle
+MSpapppaa,BWM-VR07,Body Wall Muscle
+MSpapppap,BWM-VR09,Body Wall Muscle
 MSpapppp,MSpapppp,Non-terminal
-MSpappppa,VR11,Body Wall Muscle
-MSpappppp,VR13,Body Wall Muscle
+MSpappppa,BWM-VR11,Body Wall Muscle
+MSpappppp,BWM-VR13,Body Wall Muscle
 MSpp,MSpp,Non-terminal
 MSppa,MSppa,Non-terminal
 MSppaa,MSppaa,Non-terminal
@@ -1323,7 +1323,7 @@ MSppaaa,MSppaaa,Non-terminal
 MSppaaaa,MSppaaaa,Non-terminal
 MSppaaaad,GLRR,Pharyngeal
 MSppaaaav,GLRVR,Pharyngeal
-MSppaaap,DR02,Body Wall Muscle
+MSppaaap,BWM-DR02,Body Wall Muscle
 MSppaap,MSppaap,Non-terminal
 MSppaapa,Dead,Death
 MSppaapp,Mu_Int_R,
@@ -1332,10 +1332,10 @@ MSppapa,MSppapa,Non-terminal
 MSppapaa,MSppapaa,Non-terminal
 MSppapaaa,ccAR,Coelomocyte
 MSppapaap,ccPR,Coelomocyte
-MSppapap,VR02,Body Wall Muscle
+MSppapap,BWM-VR02,Body Wall Muscle
 MSppapp,MSppapp,Non-terminal
-MSppappa,DR01,Body Wall Muscle
-MSppappp,DR04,Body Wall Muscle
+MSppappa,BWM-DR01,Body Wall Muscle
+MSppappp,BWM-DR04,Body Wall Muscle
 MSppp,MSppp,Non-terminal
 MSpppa,MSpppa,Non-terminal
 MSpppaa,MSpppaa,Non-terminal
@@ -1343,14 +1343,14 @@ MSpppaaa,Death,Death
 MSpppaap,Z1,Somatic Gonad Precursor
 MSpppap,MSpppap,Non-terminal
 MSpppapa,Death,Death
-MSpppapp,VR01,
+MSpppapp,BWM-VR01,
 MSpppp,MSpppp,Non-terminal
 MSppppa,Death,Death
-MSppppaa,VR04,
-MSppppap,DR06,
+MSppppaa,BWM-VR04,
+MSppppap,BWM-DR06,
 MSppppp,MSppppp,Non-terminal
-MSpppppa,DR03,
-MSpppppp,DR05,
+MSpppppa,BWM-DR03,
+MSpppppp,BWM-DR05,
 P2,P2,Non-terminal
 P3,P3,Non-terminal
 P4,P4,Non-terminal

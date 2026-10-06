@@ -80,6 +80,19 @@
           {
             "name": "Witvliet Neurons",
             "cells": ["ADAL", "ADAR", "ADEL", "ADER", "ADFL", "ADFR", "ADLL", "ADLR", "AFDL", "AFDR", "AIAL", "AIAR", "AIBL", "AIBR", "AIML", "AIMR", "AINL", "AINR", "AIYL", "AIYR", "AIZL", "AIZR", "ALA", "ALML", "ALMR", "ALNL", "ALNR", "AQR", "ASEL", "ASER", "ASGL", "ASGR", "ASHL", "ASHR", "ASIL", "ASIR", "ASJL", "ASJR", "ASKL", "ASKR", "AUAL", "AUAR", "AVAL", "AVAR", "AVBL", "AVBR", "AVDL", "AVDR", "AVEL", "AVER", "AVFL", "AVFR", "AVHL", "AVHR", "AVJL", "AVJR", "AVKL", "AVKR", "AVL", "AVM", "AWAL", "AWAR", "AWBL", "AWBR", "AWCL", "AWCR", "BAGL", "BAGR", "BDUL", "BDUR", "CEPDL", "CEPDR", "CEPVL", "CEPVR", "DVA", "DVC", "FLPL", "FLPR", "HSNL", "HSNR", "IL1DL", "IL1DR", "IL1L", "IL1R", "IL1VL", "IL1VR", "IL2DL", "IL2DR", "IL2L", "IL2R", "IL2VL", "IL2VR", "OLLL", "OLLR", "OLQDL", "OLQDR", "OLQVL", "OLQVR", "PLNL", "PLNR", "PVCL", "PVCR", "PVDL", "PVNL", "PVNR", "PVPL", "PVPR", "PVQL", "PVQR", "PVR", "PVT", "RIAL", "RIAR", "RIBL", "RIBR", "RICL", "RICR", "RID", "RIFL", "RIFR", "RIGL", "RIGR", "RIH", "RIML", "RIMR", "RIPL", "RIPR", "RIR", "RIS", "RIVL", "RIVR", "RMDDL", "RMDDR", "RMDL", "RMDR", "RMDVL", "RMDVR", "RMED", "RMEL", "RMER", "RMEV", "RMFL", "RMFR", "RMGL", "RMGR", "RMHL", "RMHR", "SAADL", "SAADR", "SAAVL", "SAAVR", "SABD", "SDQL", "SDQR", "SIADL", "SIADR", "SIAVL", "SIAVR", "SIBDL", "SIBDR", "SIBVL", "SIBVR", "SMBDL", "SMBDR", "SMBVL", "SMBVR", "SMDDL", "SMDDR", "SMDVL", "SMDVR", "URADL", "URADR", "URAVL", "URAVR", "URBL", "URBR", "URXL", "URXR", "URYDL", "URYDR", "URYVL", "URYVR", "VB01"]
+          },
+          {
+            "name": "Additional Neurons",
+            "cells": [
+              "AS1", "AS2", "AS3", "AS4", "AS5", "AS6", "AS7", "AS8", "AS9", "AS10", "AS11",
+              "DA1", "DA2", "DA3", "DA4", "DA5", "DA6", "DA7", "DA8", "DA9",
+              "DB1", "DB2", "DB3", "DB4", "DB5", "DB6", "DB7",
+              "VA1", "VA2", "VA3", "VA4", "VA5", "VA6", "VA7", "VA8", "VA9", "VA10", "VA11", "VA12",
+              "VB2", "VB3", "VB4", "VB5", "VB6", "VB7", "VB8", "VB9", "VB10", "VB11",
+              "VD1", "VD2", "VD3", "VD4", "VD5", "VD6", "VD7", "VD8", "VD9", "VD10", "VD11", "VD12", "VD13",
+              "PHAL", "PHAR", "PHBL", "PHBR", "PHCL", "PHCR",
+              "PLML", "PLMR", "PQR", "PVWL", "PVWR", "CANL", "CANR", "LUAL", "LUAR", "SABVL", "SABVR"
+            ]
           }
         ]
       },
@@ -106,19 +119,19 @@
         "children": [
           {
             "name": "Dorsal Left Quadrant",
-            "cells": ["DL01", "DL02", "DL03", "DL04", "DL05", "DL06", "DL07", "DL08", "DL09", "DL10", "DL11", "DL12", "DL13", "DL14", "DL15", "DL16", "DL17", "DL18", "DL19", "DL20", "DL21", "DL22", "DL23", "DL24"]
+            "cells": ["BWM-DL01", "BWM-DL02", "BWM-DL03", "BWM-DL04", "BWM-DL05", "BWM-DL06", "BWM-DL07", "BWM-DL08", "BWM-DL09", "BWM-DL10", "BWM-DL11", "BWM-DL12", "BWM-DL13", "BWM-DL14", "BWM-DL15", "BWM-DL16", "BWM-DL17", "BWM-DL18", "BWM-DL19", "BWM-DL20", "BWM-DL21", "BWM-DL22", "BWM-DL23", "BWM-DL24"]
           },
           {
             "name": "Ventral Left Quadrant",
-            "cells": ["VL01", "VL02", "VL03", "VL04", "VL05", "VL06", "VL07", "VL08", "VL09", "VL10", "VL11", "VL12", "VL13", "VL14", "VL15", "VL16", "VL17", "VL18", "VL19", "VL20", "VL21", "VL22", "VL23"]
+            "cells": ["BWM-VL01", "BWM-VL02", "BWM-VL03", "BWM-VL04", "BWM-VL05", "BWM-VL06", "BWM-VL07", "BWM-VL08", "BWM-VL09", "BWM-VL10", "BWM-VL11", "BWM-VL12", "BWM-VL13", "BWM-VL14", "BWM-VL15", "BWM-VL16", "BWM-VL17", "BWM-VL18", "BWM-VL19", "BWM-VL20", "BWM-VL21", "BWM-VL22", "BWM-VL23"]
           },
           {
             "name": "Ventral Right Quadrant",
-            "cells": ["VR01", "VR02", "VR03", "VR04", "VR05", "VR06", "VR07", "VR08", "VR09", "VR10", "VR11", "VR12", "VR13", "VR14", "VR15", "VR16", "VR17", "VR18", "VR19", "VR20", "VR21", "VR22", "VR23", "VR24"]
+            "cells": ["BWM-VR01", "BWM-VR02", "BWM-VR03", "BWM-VR04", "BWM-VR05", "BWM-VR06", "BWM-VR07", "BWM-VR08", "BWM-VR09", "BWM-VR10", "BWM-VR11", "BWM-VR12", "BWM-VR13", "BWM-VR14", "BWM-VR15", "BWM-VR16", "BWM-VR17", "BWM-VR18", "BWM-VR19", "BWM-VR20", "BWM-VR21", "BWM-VR22", "BWM-VR23", "BWM-VR24"]
           },
           {
             "name": "Dorsal Right Quadrant",
-            "cells": ["DR01", "DR02", "DR03", "DR04", "DR05", "DR06", "DR07", "DR08", "DR09", "DR10", "DR11", "DR12", "DR13", "DR14", "DR15", "DR16", "DR17", "DR18", "DR19", "DR20", "DR21", "DR22", "DR23", "DR24"]
+            "cells": ["BWM-DR01", "BWM-DR02", "BWM-DR03", "BWM-DR04", "BWM-DR05", "BWM-DR06", "BWM-DR07", "BWM-DR08", "BWM-DR09", "BWM-DR10", "BWM-DR11", "BWM-DR12", "BWM-DR13", "BWM-DR14", "BWM-DR15", "BWM-DR16", "BWM-DR17", "BWM-DR18", "BWM-DR19", "BWM-DR20", "BWM-DR21", "BWM-DR22", "BWM-DR23", "BWM-DR24"]
           }
         ]
       },
