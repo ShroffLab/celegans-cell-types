@@ -1,0 +1,33 @@
+{
+  "geff": {
+    "geff_version": "1.3",
+    "directed": true,
+    "axes": null,
+    "node_props_metadata": {
+      "name": {
+        "identifier": "name",
+        "dtype": "str",
+        "varlength": false,
+        "unit": null,
+        "name": null,
+        "description": null
+      },
+      "division_time_raw": {
+        "identifier": "division_time_raw",
+        "dtype": "int64",
+        "varlength": false,
+        "unit": null,
+        "name": null,
+        "description": null
+      }
+    },
+    "edge_props_metadata": {},
+    "sphere": null,
+    "ellipsoid": null,
+    "polygon": null,
+    "track_node_props": null,
+    "related_objects": null,
+    "display_hints": null,
+    "extra": {}
+  }
+}
