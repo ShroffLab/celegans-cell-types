@@ -1,0 +1,597 @@
+[
+  {
+    "name": "Reproductive",
+    "children": [
+      {
+        "name": "Somatic Gonad",
+        "children": [
+          {
+            "name": "Distal Tip Cell",
+            "cells": ["Z1.aa", "Z4.pp"]
+          },
+          {
+            "name": "Somatic Sheath",
+            "cells": [
+              "Z1.apa", "Z1.appaaa", "Z1.appaap", "Z1.appapa", "Z1.appapp",
+              "Z1.paaa", "Z1.paapaaa", "Z1.paapaap", "Z1.paapapa", "Z1.paapapp",
+              "Z4.pap", "Z4.paappp", "Z4.paappa", "Z4.paapap", "Z4.paapaa",
+              "Z4.appp", "Z4.appappp", "Z4.appappa", "Z4.appapap", "Z4.appapaa"
+            ]
+          },
+          {
+            "name": "Spermatheca",
+            "cells": [
+              "Z1.apppaaaa", "Z1.apppaaap", "Z1.apppaapa", "Z1.apppaapp",
+              "Z1.apppapaa", "Z1.apppapap", "Z1.apppapp", "Z1.appppa", "Z1.appppp",
+              "Z1.paappaaaa", "Z1.paappaaap", "Z1.paappaapa", "Z1.paappaapp",
+              "Z1.paappapaa", "Z1.paappapap", "Z1.paappapp", "Z1.paapppa", "Z1.paapppp",
+              "Z1.papaaad", "Z1.papaaav", "Z1.papaapv",
+              "Z4.apaaaad", "Z4.apaaaav", "Z4.apaaapv",
+              "Z1.papppav", "Z1.pappppd", "Z1.pappppv",
+              "Z4.apappav", "Z4.apapppd", "Z4.apapppv",
+              "Z4.appaaaa", "Z4.appaaap", "Z4.appaapaa", "Z4.appaapapa", "Z4.appaapapp",
+              "Z4.appaappaa", "Z4.appaappap", "Z4.appaapppa", "Z4.appaapppp",
+              "Z4.paaaaa", "Z4.paaaap", "Z4.paaapaa", "Z4.paaapapa", "Z4.paaapapp",
+              "Z4.paaappaa", "Z4.paaappap", "Z4.paaapppa", "Z4.paaapppp"
+            ]
+          },
+          {
+            "name": "Spermatheca-Uterine Valve and Core",
+            "cells": [
+              "Z1.papaapd", "Z4.apaaapd",
+              "Z1.papapaaa", "Z1.ppaaaaa", "Z1.ppaaapa", "Z4.apaapaaa"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Uterus",
+        "cells": ["du", "utse", "uv1", "uv2", "uv3"]
+      },
+      {
+        "name": "Vulva",
+        "children": [
+          {
+            "name": "Vulval Epithelium",
+            "cells": ["vulA", "vulB1", "vulB2", "vulC", "vulD", "vulE", "vulF"]
+          },
+          {
+            "name": "Vulval Precursor Cells",
+            "cells": ["P3.p", "P4.p", "P5.p", "P6.p", "P7.p", "P8.p"]
+          }
+        ]
+      },
+      {
+        "name": "Uterine and Vulval Muscles",
+        "cells": ["um1L", "um1R", "um2L", "um2R", "vm1L", "vm1R", "vm2L", "vm2R"]
+      },
+      {
+        "name": "Egg-Laying Neurons",
+        "cells": ["VC1", "VC2", "VC3", "VC4", "VC5", "VC6", "HSNL", "HSNR"]
+      }
+    ]
+  },
+  {
+    "name": "Nervous System",
+    "children": [
+      {
+        "name": "Neurons",
+        "children": [
+          {
+            "name": "Witvliet Neurons",
+            "cells": ["ADAL", "ADAR", "ADEL", "ADER", "ADFL", "ADFR", "ADLL", "ADLR", "AFDL", "AFDR", "AIAL", "AIAR", "AIBL", "AIBR", "AIML", "AIMR", "AINL", "AINR", "AIYL", "AIYR", "AIZL", "AIZR", "ALA", "ALML", "ALMR", "ALNL", "ALNR", "AQR", "ASEL", "ASER", "ASGL", "ASGR", "ASHL", "ASHR", "ASIL", "ASIR", "ASJL", "ASJR", "ASKL", "ASKR", "AUAL", "AUAR", "AVAL", "AVAR", "AVBL", "AVBR", "AVDL", "AVDR", "AVEL", "AVER", "AVFL", "AVFR", "AVHL", "AVHR", "AVJL", "AVJR", "AVKL", "AVKR", "AVL", "AVM", "AWAL", "AWAR", "AWBL", "AWBR", "AWCL", "AWCR", "BAGL", "BAGR", "BDUL", "BDUR", "CEPDL", "CEPDR", "CEPVL", "CEPVR", "DVA", "DVC", "FLPL", "FLPR", "HSNL", "HSNR", "IL1DL", "IL1DR", "IL1L", "IL1R", "IL1VL", "IL1VR", "IL2DL", "IL2DR", "IL2L", "IL2R", "IL2VL", "IL2VR", "OLLL", "OLLR", "OLQDL", "OLQDR", "OLQVL", "OLQVR", "PLNL", "PLNR", "PVCL", "PVCR", "PVDL", "PVNL", "PVNR", "PVPL", "PVPR", "PVQL", "PVQR", "PVR", "PVT", "RIAL", "RIAR", "RIBL", "RIBR", "RICL", "RICR", "RID", "RIFL", "RIFR", "RIGL", "RIGR", "RIH", "RIML", "RIMR", "RIPL", "RIPR", "RIR", "RIS", "RIVL", "RIVR", "RMDDL", "RMDDR", "RMDL", "RMDR", "RMDVL", "RMDVR", "RMED", "RMEL", "RMER", "RMEV", "RMFL", "RMFR", "RMGL", "RMGR", "RMHL", "RMHR", "SAADL", "SAADR", "SAAVL", "SAAVR", "SABD", "SDQL", "SDQR", "SIADL", "SIADR", "SIAVL", "SIAVR", "SIBDL", "SIBDR", "SIBVL", "SIBVR", "SMBDL", "SMBDR", "SMBVL", "SMBVR", "SMDDL", "SMDDR", "SMDVL", "SMDVR", "URADL", "URADR", "URAVL", "URAVR", "URBL", "URBR", "URXL", "URXR", "URYDL", "URYDR", "URYVL", "URYVR", "VB01"]
+          }
+        ]
+      },
+      {
+        "name": "Neuronal Support Cells",
+        "children": [
+          {
+            "name": "Sheath Cells",
+            "cells": ["ADEshL", "ADEshR", "AMshL", "AMshR", "CEPshDL", "CEPshDR", "CEPshVL", "CEPshVR", "ILshDL", "ILshDR", "ILshL", "ILshR", "ILshVL", "ILshVR", "OLLshL", "OLLshR", "OLQshDL", "OLQshDR", "OLQshVL", "OLQshVR", "PDEshL", "PDEshR", "PHshL", "PHshR"]
+          },
+          {
+            "name": "Socket Cells",
+            "cells": ["ADEsoL", "ADEsoR", "AMsoL", "AMsoR", "CEPsoDL", "CEPsoDR", "CEPsoVL", "CEPsoVR", "ILsoDL", "ILsoDR", "ILsoL", "ILsoR", "ILsoVL", "ILsoVR", "OLLsoL", "OLLsoR", "OLQsoDL", "OLQsoDR", "OLQsoVL", "OLQsoVR", "PDEsoL", "PDEsoR", "PHso1L", "PHso2L", "PHso1R", "PHso2R", "TL", "TR"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Muscle",
+    "children": [
+      {
+        "name": "Somatic Muscle",
+        "children": [
+          {
+            "name": "Dorsal Left Quadrant",
+            "cells": ["DL01", "DL02", "DL03", "DL04", "DL05", "DL06", "DL07", "DL08", "DL09", "DL10", "DL11", "DL12", "DL13", "DL14", "DL15", "DL16", "DL17", "DL18", "DL19", "DL20", "DL21", "DL22", "DL23", "DL24"]
+          },
+          {
+            "name": "Ventral Left Quadrant",
+            "cells": ["VL01", "VL02", "VL03", "VL04", "VL05", "VL06", "VL07", "VL08", "VL09", "VL10", "VL11", "VL12", "VL13", "VL14", "VL15", "VL16", "VL17", "VL18", "VL19", "VL20", "VL21", "VL22", "VL23"]
+          },
+          {
+            "name": "Ventral Right Quadrant",
+            "cells": ["VR01", "VR02", "VR03", "VR04", "VR05", "VR06", "VR07", "VR08", "VR09", "VR10", "VR11", "VR12", "VR13", "VR14", "VR15", "VR16", "VR17", "VR18", "VR19", "VR20", "VR21", "VR22", "VR23", "VR24"]
+          },
+          {
+            "name": "Dorsal Right Quadrant",
+            "cells": ["DR01", "DR02", "DR03", "DR04", "DR05", "DR06", "DR07", "DR08", "DR09", "DR10", "DR11", "DR12", "DR13", "DR14", "DR15", "DR16", "DR17", "DR18", "DR19", "DR20", "DR21", "DR22", "DR23", "DR24"]
+          }
+        ]
+      },
+      {
+        "name": "GLR Cells",
+        "cells": ["GLRL", "GLRR", "GLRVL", "GLRVR", "GLRDL", "GLRDR"]
+      },
+      {
+        "name": "HMC",
+        "cells": ["hmc", "hmc homolog"]
+      }
+    ]
+  },
+  {
+    "name": "Epithelial",
+    "children": [
+      {
+        "name": "Hypodermis",
+        "cells": ["hyp1V", "hyp1DL", "hyp1DR", "hyp2V", "hyp2DL", "hyp3", "hyp4", "hyp5", "hyp6", "hyp7", "hyp8", "hyp9", "hyp10", "hyp11"]
+      },
+      {
+        "name": "Seam",
+        "cells": [
+          "H0L", "H1L", "H2L", "V1L", "V2L", "V3L", "V4L", "V5L", "V6L", "TL",
+          "H1L.aa", "H1L.appp", "H2L.pppp", "V1L.pappp", "V1L.ppppp", "V2L.pappp", "V2L.ppppp", "V3L.pappp", "V3L.ppppp", "V4L.pappp", "V4L.ppppp", "V5L.ppppp", "V6L.pappp", "V6L.ppppp", "TL.appa",
+          "V5L.pppapp", "V5L.pppppp", "V6L.papapp", "V6L.papppp", "V6L.pppapp", "V6L.pppppp",
+          "H0R", "H1R", "H2R", "V1R", "V2R", "V3R", "V4R", "V5R", "V6R", "TR",
+          "H1R.aa", "H1R.appp", "H2R.pppp", "V1R.pappp", "V1R.ppppp", "V2R.pappp", "V2R.ppppp", "V3R.pappp", "V3R.ppppp", "V4R.pappp", "V4R.ppppp", "V5R.ppppp", "V6R.pappp", "V6R.ppppp", "TR.appa",
+          "V5R.pppapp", "V5R.pppppp", "V6R.papapp", "V6R.papppp", "V6R.pppapp", "V6R.pppppp"
+        ]
+      },
+      {
+        "name": "Atypical",
+        "children": [
+          {
+            "name": "XXX Cells",
+            "cells": ["XXXL", "XXXR"]
+          },
+          {
+            "name": "Tail Spike Scaffold Cells",
+            "cells": ["ABplppppppa", "ABprppppppa"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Excretory",
+    "children": [
+      {
+        "name": "Excretory Canal Cell",
+        "cells": ["exc cell"]
+      },
+      {
+        "name": "Excretory Gland Cell",
+        "cells": ["exc gl L", "exc gl R"]
+      },
+      {
+        "name": "Excretory Duct Cell",
+        "cells": ["exc duct"]
+      },
+      {
+        "name": "Excretory Pore Cell",
+        "cells": ["G1", "G2", "Exc pore cell"]
+      }
+    ]
+  },
+  {
+    "name": "Alimentary",
+    "children": [
+      {
+        "name": "Pharyngeal",
+        "children": [
+          {
+            "name": "Pharyngeal Muscle",
+            "children": [
+              {
+                "name": "1st Pharyngeal Muscle Ring",
+                "cells": [
+                  "pm1DL",
+                  "pm1DR",
+                  "pm1L",
+                  "pm1R",
+                  "pm1VL",
+                  "pm1VR"
+                ]
+              },
+              {
+                "name": "2nd Pharyngeal Muscle Ring",
+                "cells": [
+                  "pm2DL",
+                  "pm2DR",
+                  "pm2L",
+                  "pm2R",
+                  "pm2VL",
+                  "pm2VR"
+                ]
+              },
+              {
+                "name": "3rd Pharyngeal Muscle Ring",
+                "cells": [
+                  "pm3DL",
+                  "pm3DR",
+                  "pm3L",
+                  "pm3R",
+                  "pm3VL",
+                  "pm3VR"
+                ]
+              },
+              {
+                "name": "4th Pharyngeal Muscle Ring",
+                "cells": [
+                  "pm4DL",
+                  "pm4DR",
+                  "pm4L",
+                  "pm4R",
+                  "pm4VL",
+                  "pm4VR"
+                ]
+              },
+              {
+                "name": "5th Pharyngeal Muscle Ring",
+                "cells": [
+                  "pm5DL",
+                  "pm5DR",
+                  "pm5L",
+                  "pm5R",
+                  "pm5VL",
+                  "pm5VR"
+                ]
+              },
+              {
+                "name": "6th Pharyngeal Muscle Ring",
+                "cells": [
+                  "pm6D",
+                  "pm6VL",
+                  "pm6VR"
+                ]
+              },
+              {
+                "name": "7th Pharyngeal Muscle Ring",
+                "cells": [
+                  "pm7D",
+                  "pm7VL",
+                  "pm7VR"
+                ]
+              },
+              {
+                "name": "8th Pharyngeal Muscle Ring",
+                "cells": [
+                  "pm8"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Marginal Cells",
+            "children": [
+              {
+                "name": "1st Marginal Cell Ring",
+                "cells": [
+                  "mc1DL",
+                  "mc1DR",
+                  "mc1V"
+                ]
+              },
+              {
+                "name": "2nd Marginal Cell Ring",
+                "cells": [
+                  "mc2DL",
+                  "mc2DR",
+                  "mc2V"
+                ]
+              },
+              {
+                "name": "3rd Marginal Cell Ring",
+                "cells": [
+                  "mc3DL",
+                  "mc3DR",
+                  "mc3V"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Pharyngeal Neuron",
+            "children": [
+              {
+                "name": "Pharyngeal Motor Neuron",
+                "cells": [
+                  "M1",
+                  "M2L",
+                  "M2R",
+                  "M3L",
+                  "M3R",
+                  "M4",
+                  "M5"
+                ]
+              },
+              {
+                "name": "Pharyngeal Interneuron",
+                "cells": [
+                  "I1L",
+                  "I1R",
+                  "I2L",
+                  "I2R",
+                  "I3",
+                  "I4",
+                  "I5",
+                  "I6"
+                ]
+              },
+              {
+                "name": "Other Pharyngeal Neuron",
+                "cells": [
+                  "MI",
+                  "NSML",
+                  "NSMR",
+                  "MCL",
+                  "MCR"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Pharyngeal-Intestinal Valve",
+            "children": [
+              {
+                "name": "1st Pharyngeal Valve Ring",
+                "cells": [
+                  "vpi1"
+                ]
+              },
+              {
+                "name": "2nd Pharyngeal Valve Ring",
+                "cells": [
+                  "vpi2DL",
+                  "vpi2DR",
+                  "vpi2V"
+                ]
+              },
+              {
+                "name": "3rd Pharyngeal Valve Ring",
+                "cells": [
+                  "vpi3D",
+                  "vpi3V"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Pharyngeal Gland",
+            "children": [
+              {
+                "name": "1st Pharyngeal Gland Ring",
+                "cells": [
+                  "g1AL",
+                  "g1AR",
+                  "g1P"
+                ]
+              },
+              {
+                "name": "2nd Pharyngeal Gland Ring",
+                "cells": [
+                  "g2L",
+                  "g2R"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Buccal Epithelium",
+            "children": [
+              {
+                "name": "1st Epithelial Ring",
+                "cells": [
+                  "e1D",
+                  "e1VL",
+                  "e1VR"
+                ]
+              },
+              {
+                "name": "2nd Epithelial Ring",
+                "cells": [
+                  "e2DL",
+                  "e2DR",
+                  "e2V"
+                ]
+              },
+              {
+                "name": "3rd Epithelial Ring",
+                "cells": [
+                  "e3D",
+                  "e3VL",
+                  "e3VR"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Intestinal",
+        "children": [
+          {
+            "name": "1st Intestinal Ring",
+            "cells": [
+              "int1DL",
+              "int1DR",
+              "int1VL",
+              "int1VR"
+            ]
+          },
+          {
+            "name": "2nd Intestinal Ring",
+            "cells": [
+              "int2D",
+              "int2V"
+            ]
+          },
+          {
+            "name": "3rd Intestinal Ring",
+            "cells": [
+              "int3D",
+              "int3Da",
+              "int3Dp",
+              "int3V",
+              "int3Va",
+              "int3Vp"
+            ]
+          },
+          {
+            "name": "4th Intestinal Ring",
+            "cells": [
+              "int4D",
+              "int4Da",
+              "int4Dp",
+              "int4V",
+              "int4Va",
+              "int4Vp"
+            ]
+          },
+          {
+            "name": "5th Intestinal Ring",
+            "cells": [
+              "int5L",
+              "int5La",
+              "int5Lp",
+              "int5R",
+              "int5Ra",
+              "int5Rp"
+            ]
+          },
+          {
+            "name": "6th Intestinal Ring",
+            "cells": [
+              "int6L",
+              "int6La",
+              "int6Lp",
+              "int6R",
+              "int6Ra",
+              "int6Rp"
+            ]
+          },
+          {
+            "name": "7th Intestinal Ring",
+            "cells": [
+              "int7L",
+              "int7La",
+              "int7Lp",
+              "int7R",
+              "int7Ra",
+              "int7Rp"
+            ]
+          },
+          {
+            "name": "8th Intestinal Ring",
+            "cells": [
+              "int8L",
+              "int8La",
+              "int8Lp",
+              "int8R",
+              "int8Ra",
+              "int8Rp"
+            ]
+          },
+          {
+            "name": "9th Intestinal Ring",
+            "cells": [
+              "int9L",
+              "int9La",
+              "int9Lp",
+              "int9R",
+              "int9Ra",
+              "int9Rp"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Rectum and Anus",
+        "children": [
+          {
+            "name": "Intestinal-Rectal Valve Cells",
+            "cells": [
+              "virL",
+              "virR"
+            ]
+          },
+          {
+            "name": "Rectal Gland Cells",
+            "cells": [
+              "rectD",
+              "rectVL",
+              "rectVR"
+            ]
+          },
+          {
+            "name": "Rectal Epithelial Cells",
+            "cells": [
+              "B",
+              "F",
+              "Y",
+              "U",
+              "K",
+              "K'",
+              "K.a"
+            ]
+          },
+          {
+            "name": "Enteric Muscles",
+            "children": [
+              {
+                "name": "Stomatointestinal Muscle",
+                "cells": [
+                  "mu intL",
+                  "mu intR"
+                ]
+              },
+              {
+                "name": "Anal Sphincter Muscle",
+                "cells": [
+                  "mu sph"
+                ]
+              },
+              {
+                "name": "Anal Depressor Muscle",
+                "cells": [
+                  "mu anal"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Enteric Neurons",
+            "cells": [
+              "AVL",
+              "DVB"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Coelomocyte",
+    "cells": [
+      "ccAL",
+      "ccAR",
+      "ccDL",
+      "ccDR",
+      "ccPL",
+      "ccPR"
+    ]
+  }
+]
