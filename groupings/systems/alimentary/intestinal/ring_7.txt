@@ -1,0 +1,6 @@
+int7L
+int7La
+int7Lp
+int7R
+int7Ra
+int7Rp

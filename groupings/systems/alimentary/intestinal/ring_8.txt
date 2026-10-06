@@ -1,0 +1,6 @@
+int8L
+int8La
+int8Lp
+int8R
+int8Ra
+int8Rp
